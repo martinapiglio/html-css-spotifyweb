@@ -234,6 +234,7 @@ main .music .card-container .card .card-txt .subtitle {
 /* footer */
 footer {
     display: flex;
+    justify-content: space-between;
 
     height: 70px;
     padding: 15px 10px;
@@ -280,6 +281,7 @@ footer .footer-left .song-icons{
     gap: 10px;
 
     color: #777777;
+    font-size: .8em;
     cursor: pointer;
 }
 
@@ -288,7 +290,7 @@ footer .footer-center {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
 
     color: white;
 }
@@ -312,28 +314,64 @@ footer .footer-center .footer-center-bottom {
     font-size: .6em;
 }
 
-footer .footer-center .footer-center-bottom .song-lifespan-bar {
+footer .footer-center .footer-center-bottom .song-lifespan-bar,
+footer .footer-right .volume-bar {
     height: 3px;
-    width: 500px;
     border-radius: 10px;
 
     background-color: #777777;
 }
 
-footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar {
+footer .footer-center .footer-center-bottom .song-lifespan-bar {
+    width: 500px;
+}
+
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar,
+footer .footer-right .volume-bar .volume-set {
     display: flex;
     align-items: center;
     justify-content: flex-end; 
     
     height: 3px;
-    width: 15%;
     border-radius: 10px;
 
     background-color: #c1c1c1;
 }
 
-footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar i{
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar{
+    width: 15%;
+}
+
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar i,
+footer .footer-right .volume-bar .volume-set i {
     display: none;
+}
+
+footer .footer-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: .6em;
+    color: white;    
+}
+
+footer .footer-right .options-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .footer-right .options-icons i{
+    cursor: pointer;
+}
+
+footer .footer-right .volume-bar {
+    width: 100px;
+}
+
+footer .footer-right .volume-bar .volume-set {
+    width: 45%;
 }
 
 /* hover */
@@ -354,33 +392,16 @@ footer .footer-center .footer-center-top i#play:hover{
     transform: scale(1.1);
 }
 
-footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar:hover{
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar:hover,
+footer .footer-right .volume-bar .volume-set:hover {
     background-color: #baff30;
+    cursor: pointer;
 }
 
-footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar:hover i{
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar:hover i,
+footer .footer-right .volume-bar .volume-set:hover i {
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
