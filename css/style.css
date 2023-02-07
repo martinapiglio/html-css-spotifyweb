@@ -233,6 +233,8 @@ main .music .card-container .card .card-txt .subtitle {
 
 /* footer */
 footer {
+    display: flex;
+
     height: 70px;
     padding: 15px 10px;
     background-color: #2d2d2d;
@@ -281,6 +283,59 @@ footer .footer-left .song-icons{
     cursor: pointer;
 }
 
+footer .footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+}
+
+footer .footer-center .footer-center-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .footer-center .footer-center-top i#play {
+    font-size: 1.6em;
+    padding: 0 10px;
+}
+
+footer .footer-center .footer-center-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: .6em;
+}
+
+footer .footer-center .footer-center-bottom .song-lifespan-bar {
+    height: 3px;
+    width: 500px;
+    border-radius: 10px;
+
+    background-color: #777777;
+}
+
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    
+    height: 3px;
+    width: 15%;
+    border-radius: 10px;
+
+    background-color: #c1c1c1;
+}
+
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar i{
+    display: none;
+}
+
 /* hover */
 footer .footer-left .song-card .song-info #song-name:hover { 
     color: white;
@@ -290,4 +345,44 @@ footer .footer-left .song-card .song-info #song-name:hover {
 footer .footer-left .song-icons i:hover{
     color: white;
 }
+
+footer .footer-center .footer-center-top i:hover{
+    cursor: pointer;
+}
+
+footer .footer-center .footer-center-top i#play:hover{
+    transform: scale(1.1);
+}
+
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar:hover{
+    background-color: #baff30;
+}
+
+footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar:hover i{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
