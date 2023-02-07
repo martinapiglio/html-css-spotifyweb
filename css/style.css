@@ -9,7 +9,7 @@ header {
     font-weight: bold;
     color: #777777;
     background-color: black;
-    height: calc(100vh - 100px); /* - player bar size */
+    height: calc(100vh - 60px); /* - player bar size */
 }
 
 header .container {
@@ -104,6 +104,8 @@ header .container .header-top nav ul li .nav-row a:hover {
 main {
     background-color: #141922;
     width: calc(100% - 150px);
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
 }
 
 /* main section upgrade button */
@@ -116,7 +118,7 @@ main section.container-upgrade {
     align-items: center;
     justify-content: flex-end;
     
-    padding: 15px;
+    padding: 15px 30px;
     width: calc(100% - 150px); /* viewport size - header size */
 
     background-color: rgba(0, 0, 0, .4);
@@ -177,7 +179,7 @@ main nav ul li.nav-opt:hover .underline {
 }
 /* /main navbar */
 
-/* main recently played  */
+/* main music sections  */
 main .music {
     padding: 20px 50px 20px;
     color: white;
@@ -227,4 +229,10 @@ main .music .card-container .card .card-txt .subtitle {
     color: #777777;
     font-weight: bold;
 }
+/* /main music sections  */
 
+/* footer */
+footer {
+    height: 60px;
+    background-color: #2d2d2d;
+}
