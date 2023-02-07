@@ -4,12 +4,12 @@
 
 /* header */
 header {
-    width: 150px; /* TO BE CHANGED */
+    width: 150px; 
     font-size: 10px;
     font-weight: bold;
     color: #777777;
     background-color: black;
-    height: calc(100vh - 70px); /* - player bar size */
+    height: calc(100vh - 70px); 
 }
 
 header .container {
@@ -97,12 +97,11 @@ header .container .header-bottom .user a img {
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    
+
     filter: invert(0%);
     background-color: #808080;
 }
 
-/* TO BE FINISHED */
 /* hover */ 
 header .container a:hover,
 header .container .header-top .playlist ul li .playlist-create a:hover i {
@@ -149,7 +148,7 @@ main section.container-upgrade button#upgrade-btn {
 
     font-size: 11px;
     color: white;
-    background-color: black; /* TO BE CHANGED */
+    background-color: black; 
     border: 2px solid white;
     cursor: pointer;
 }
@@ -421,7 +420,7 @@ footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar
 footer .footer-right .volume-bar .volume-set:hover i {
     display: block;
 }
-/* footer */
+/* /footer */
 
 
 
