@@ -3,10 +3,48 @@ header {
     width: 150px;
     color: white;
     background-color: black;
-    /* height: calc(100vh - x); x is the player bar size */
+    height: calc(100vh - 100px); /* x is the player bar size */
+}
+
+header .container {
+    width: 100%
 }
 
 img {
     width: 100px;
 }
 
+
+
+
+
+main section.container-upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    padding: 15px ;
+    width: calc(100vw - 150px);
+
+    background-color: rgba(0, 0, 0, .8);
+}
+
+main section.container-upgrade button#upgrade-btn {
+    padding: 8px 40px;
+    border-radius: 25px;
+
+    font-size: 11px;
+    color: white;
+    background-color: black; /* TO BE CHANGED */
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+main section.container-upgrade button#upgrade-btn:hover{
+    transform: scale(1.1);
+}
