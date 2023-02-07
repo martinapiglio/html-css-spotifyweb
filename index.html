@@ -17,144 +17,174 @@
 </head>
 
 <body>
+
+    <div class="outer-container">
+
+        <header>
     
-    <header>
-
-        <div class="container">
-
-            <div class="header-top">
-                
-                <div class="logo">
+            <div class="container">
+    
+                <div class="header-top">
                     
-                    <img class="logo-desktop" src="img/logo.svg" alt="logo-desktop">
-                    <img class="logo-mobile" src="img/logo-small.svg" alt="logo-mobile">
+                    <div class="logo">
+                        
+                        <img id="logo-desktop" src="img/logo.svg" alt="logo-desktop">
+                        <img id="logo-mobile" src="img/logo-small.svg" alt="logo-mobile">
+                        
+                    </div>
+                    
+                    <nav>
+                        
+                        <ul>
+                            <li>
+                                <div class="nav-row" id="nav-home">
+                                    <a href="#">
+                                        <img src="img/home.svg" alt="home-img">
+                                        <div class="nav-txt">Home</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-row" id="nav-search">
+                                    <a href="#">
+                                        <img src="img/search.svg" alt="search-img">
+                                        <div class="nav-txt">Cerca</div> 
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-row" id="nav-library">
+                                    <a href="#">
+                                        <img src="img/libreria.svg" alt="library-img">
+                                        <div class="nav-txt">La tua Libreria</div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+        
+                    <section class="playlist">
+        
+                        <h3>PLAYLIST</h3>
+        
+                        <ul>
+                            <li>
+                                <div class="playlist-create">
+                                    <a href="#"><i class="fa-sharp fa-solid fa-square-plus"></i> Crea Playlist</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playlist-name">
+                                    <a href="#">Nome Playlist</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playlist-name">
+                                    <a href="#">Nome Playlist</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playlist-name">
+                                    <a href="#">Nome Playlist</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playlist-name">
+                                    <a href="#">Nome Playlist</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playlist-name">
+                                    <a href="#">Nome Playlist</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playlist-name">
+                                    <a href="#">Nome Playlist</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playlist-name">
+                                    <a href="#">Nome Playlist</a>
+                                </div>
+                            </li>
+                        </ul>
+        
+                    </section>
                     
                 </div>
-                
-                <nav>
-                    
-                    <ul>
-                        <li>
-                            <div class="nav-row" id="nav-home">
-                                <a href="#">
-                                    <img src="img/home.svg" alt="home-img">
-                                    <div class="nav-txt">Home</div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-row" id="nav-search">
-                                <a href="#">
-                                    <img src="img/search.svg" alt="search-img">
-                                    <div class="nav-txt">Cerca</div> 
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-row" id="nav-library">
-                                <a href="#">
-                                    <img src="img/libreria.svg" alt="library-img">
-                                    <div class="nav-txt">La tua Libreria</div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                </nav>
-    
-                <section class="playlist">
-    
-                    <h3>PLAYLIST</h3>
-    
-                    <ul>
-                        <li>
-                            <div class="playlist-create">
-                                <a href="#"><i class="fa-sharp fa-solid fa-square-plus"></i> Crea Playlist</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="playlist-name">
-                                <a href="#">Nome Playlist</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="playlist-name">
-                                <a href="#">Nome Playlist</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="playlist-name">
-                                <a href="#">Nome Playlist</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="playlist-name">
-                                <a href="#">Nome Playlist</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="playlist-name">
-                                <a href="#">Nome Playlist</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="playlist-name">
-                                <a href="#">Nome Playlist</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="playlist-name">
-                                <a href="#">Nome Playlist</a>
-                            </div>
-                        </li>
-                    </ul>
-    
-                </section>
-                
-            </div>
-    
-            <div class="header-bottom">
-    
-                <div class="download">
-                    <a href="#">
-                        <img src="img/download.svg" alt="download-img">
-                        <div class="download-txt">Installa ora</div>
-                    </a>
-                </div> <!-- border bottom to be stylized -->
-    
-                <div class="user">
-                    <a href="#">
-                        <img src="img/profile.svg" alt="profile-img">
-                        <div class="user-name">John Doe</div>
-                    </a>
+        
+                <div class="header-bottom">
+        
+                    <div class="bottom download">
+                        <a href="#">
+                            <img src="img/download.svg" alt="download-img">
+                            <div class="download-txt">Installa app</div>
+                        </a>
+                    </div>
+        
+                    <div class="bottom user">
+                        <a href="#">
+                            <img src="img/profile.svg" alt="profile-img">
+                            <div class="user-name">John Doe</div>
+                        </a>
+                    </div>
+        
                 </div>
     
             </div>
+    
+        </header>
+    
+    
+        <main>
+    
+            <section class="container-upgrade">
+                <button id="upgrade-btn">
+                    EFFETTUA L'UPGRADE
+                </button>
+            </section>
+    
+            <nav>
+    
+                <ul>
+                    <li class="nav-opt">
+                        <a href="#">IN EVIDENZA</a> 
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-opt">
+                        <a href="#">PODCAST</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-opt">
+                        <a href="#">CLASSIFICHE</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-opt">
+                        <a href="#">GENERI E MOOD</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-opt">
+                        <a href="#">NUOVE USCITE</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-opt">
+                        <a href="#">SCOPRI</a>
+                        <div class="underline"></div>
+                    </li>
+                </ul>
+    
+            </nav>
+    
+            
+    
+    
+        </main>
 
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <section class="container-upgrade">
-            <div class="row upgrade">
-                <a href="#">
-                    <button>
-                        EFFETTUA L'UPGRADE
-                    </button>
-                </a>
-            </div>
-        </section>
-
-
-
-
-
-
-    </main>
-
+    </div>
+    
+    <footer></footer>
 
 
 </body>

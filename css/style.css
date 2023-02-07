@@ -114,7 +114,7 @@ main section.container-upgrade {
     align-items: center;
     justify-content: flex-end;
     
-    padding: 15px ;
+    padding: 15px;
     width: calc(100vw - 150px); /* viewport size - header size */
 
     background-color: rgba(0, 0, 0, .8);
