@@ -1,3 +1,7 @@
+.outer-container {
+    display: flex;
+}
+
 /* header */
 header {
     width: 150px; /* TO BE CHANGED */
@@ -5,7 +9,7 @@ header {
     font-weight: bold;
     color: #777777;
     background-color: black;
-    height: calc(100vh - 100px); /* x is the player bar size */
+    height: calc(100vh - 100px); /* - player bar size */
 }
 
 header .container {
@@ -96,11 +100,14 @@ header .container .header-top nav ul li .nav-row a:hover {
 /* /header */
 
 /* main */
+main {
+    flex-grow: 1;
+}
+
 /* main section upgrade button */
 main section.container-upgrade {
     position: fixed;
     top: 0;
-    right: 0;
     z-index: 1;
 
     display: flex;
@@ -129,3 +136,42 @@ main section.container-upgrade button#upgrade-btn:hover{
     transform: scale(1.1);
 }
 /* / main section upgrade button */
+
+/* main navbar */
+main nav {
+    padding: 80px 0 10px;
+    font-size: 12px;
+    color: #777777;
+}
+
+main nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+main nav ul li.nav-opt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+main nav ul li.nav-opt .underline {
+    display: none;
+
+    margin-top: 2px;
+    height: 1.5px;
+    width: 25px;
+    background-color: #baff30;
+}
+
+/* hover */
+main nav ul li.nav-opt:hover {
+    color: white;
+}
+
+main nav ul li.nav-opt:hover .underline {
+    display: block;
+}
+/* /main navbar */
