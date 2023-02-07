@@ -9,7 +9,7 @@ header {
     font-weight: bold;
     color: #777777;
     background-color: black;
-    height: calc(100vh - 60px); /* - player bar size */
+    height: calc(100vh - 70px); /* - player bar size */
 }
 
 header .container {
@@ -104,7 +104,7 @@ header .container .header-top nav ul li .nav-row a:hover {
 main {
     background-color: #141922;
     width: calc(100% - 150px);
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
     overflow-y: scroll;
 }
 
@@ -233,6 +233,61 @@ main .music .card-container .card .card-txt .subtitle {
 
 /* footer */
 footer {
-    height: 60px;
+    height: 70px;
+    padding: 15px 10px;
     background-color: #2d2d2d;
 }
+
+footer .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+footer .footer-left .song-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-left .song-card img{
+    height: 40px;
+}
+
+footer .footer-left .song-card .song-info {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-left .song-card .song-info #song-author{
+    color: white;
+    font-size: .7em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer .footer-left .song-card .song-info #song-name{
+    font-size: .6em;
+    font-weight: bold;
+    color:#777777;
+    cursor: pointer;
+}
+
+footer .footer-left .song-icons{
+    display: flex;
+    gap: 10px;
+
+    color: #777777;
+    cursor: pointer;
+}
+
+/* hover */
+footer .footer-left .song-card .song-info #song-name:hover { 
+    color: white;
+    text-decoration: underline;
+}
+
+footer .footer-left .song-icons i:hover{
+    color: white;
+}
+
