@@ -1,0 +1,14 @@
+/* test */
+header {
+    width: 150px;
+    color: white;
+    background-color: black;
+}
+
+img {
+    width: 100px;
+}
+
+/* header .container {
+    height: calc(100vh - x); x is the player bar size
+} */
