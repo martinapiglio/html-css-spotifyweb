@@ -1,23 +1,102 @@
-/* test */
+/* header */
 header {
-    width: 150px;
-    color: white;
+    width: 150px; /* TO BE CHANGED */
+    font-size: 10px;
+    font-weight: bold;
+    color: #777777;
     background-color: black;
     height: calc(100vh - 100px); /* x is the player bar size */
 }
 
 header .container {
-    width: 100%
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    padding: 15px 0;
 }
 
-img {
-    width: 100px;
+header .logo,
+header a,
+header h3 {
+    padding-left: 15px;
 }
 
+header .container .header-top .logo #logo-desktop {
+    width: 80%;
+    padding-bottom: 15px;
+} 
 
+header .container .header-top .logo #logo-mobile {
+    display: none;
+} 
 
+header .container .header-top nav {
+    padding-bottom: 20px;
+}
 
+header .container .header-top .playlist {
+    overflow: hidden;
+}
 
+header .container .header-top .playlist h3 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+header .container .header-top nav ul,
+header .container .header-top .playlist ul{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+header .container .header-top .playlist ul li .playlist-create i{
+    font-size: 2.5em;
+    color: #a3a3a3;
+}
+
+header .container .header-top nav ul li .nav-row a,
+header .container .header-top .playlist ul li .playlist-create a,
+header .container .header-bottom .bottom a {
+    border: 2px solid transparent;
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .container .header-top nav ul li .nav-row a img,
+header .container .header-bottom .bottom a img {
+    width: 1.4em;
+    filter: invert(50%);
+} 
+
+header .container .header-bottom {
+    padding: 0 15px;
+}
+
+header .container .header-bottom .bottom a {
+    padding-left: 0;
+}
+
+header .container .header-bottom .download {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #777777
+}
+
+/* TO BE FINISHED */
+/* hover */ 
+header .container .header-top nav ul li .nav-row a:hover {
+    color:white;
+    border-left: 2px solid #baff30;
+}
+/* /header */
+
+/* main */
+/* main section upgrade button */
 main section.container-upgrade {
     position: fixed;
     top: 0;
@@ -29,7 +108,7 @@ main section.container-upgrade {
     justify-content: flex-end;
     
     padding: 15px ;
-    width: calc(100vw - 150px);
+    width: calc(100vw - 150px); /* viewport size - header size */
 
     background-color: rgba(0, 0, 0, .8);
 }
@@ -45,6 +124,8 @@ main section.container-upgrade button#upgrade-btn {
     cursor: pointer;
 }
 
+/* hover */
 main section.container-upgrade button#upgrade-btn:hover{
     transform: scale(1.1);
 }
+/* / main section upgrade button */
