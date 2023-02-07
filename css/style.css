@@ -31,6 +31,7 @@ header h3 {
 header .container .header-top .logo #logo-desktop {
     width: 80%;
     padding-bottom: 15px;
+    cursor: pointer;
 } 
 
 header .container .header-top .logo #logo-mobile {
@@ -92,11 +93,29 @@ header .container .header-bottom .download {
     border-bottom: 1px solid #777777
 }
 
+header .container .header-bottom .user a img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    
+    filter: invert(0%);
+    background-color: #808080;
+}
+
 /* TO BE FINISHED */
 /* hover */ 
-header .container .header-top nav ul li .nav-row a:hover {
+header .container a:hover,
+header .container .header-top .playlist ul li .playlist-create a:hover i {
     color:white;
+}
+
+header .container .header-top nav ul li .nav-row a:hover {
     border-left: 2px solid #baff30;
+}
+
+header .container .header-top nav ul li .nav-row a:hover img,
+header .container .header-bottom .download a:hover img {
+    filter: invert(0%);
 }
 /* /header */
 
@@ -402,8 +421,7 @@ footer .footer-center .footer-center-bottom .song-lifespan-bar .ongoing-song-bar
 footer .footer-right .volume-bar .volume-set:hover i {
     display: block;
 }
-
-
+/* footer */
 
 
 
