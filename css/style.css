@@ -9,7 +9,7 @@
 header {
     width: 150px; 
 
-    font-size: 10px;
+    font-size: 13px;
     font-weight: bold;
     color: #777777;
     background-color: black;
@@ -163,7 +163,7 @@ main section.container-upgrade button#upgrade-btn {
     padding: 8px 40px;
     border-radius: 25px;
 
-    font-size: 11px;
+    font-size: 13px;
     color: white;
     background-color: black; 
     border: 2px solid white;
@@ -179,7 +179,7 @@ main section.container-upgrade button#upgrade-btn:hover{
 /* main navbar */
 main nav {
     padding: 80px 0 10px;
-    font-size: 12px;
+    font-size: 14px;
     color: #777777;
 }
 
@@ -252,6 +252,10 @@ main .music .card-container .card {
     width: calc(100% / 6);
 }
 
+main .popular .card-container .card .card-img img {
+    border-radius: 50%;
+}
+
 main .music .card-container .card .card-img img {
     width: 100%;
 }
@@ -295,7 +299,13 @@ main .music .card-container .card .card-txt .subtitle {
     display: flex;
 }
 
-.card:hover {
+.recently-played .card-container .card:hover,
+.for-you .card-container .card:hover {
+    cursor: pointer;
+}
+
+.popular .card-container .card .card-img img:hover,
+.popular .card-container .card .card-txt:hover {
     cursor: pointer;
 }
 /* /main music sections  */
