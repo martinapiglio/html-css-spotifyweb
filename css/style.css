@@ -37,7 +37,7 @@ header .container .header-top .logo #logo-desktop {
     cursor: pointer;
 } 
 
-header .container .header-top .logo #logo-mobile {
+header .container .header-top .logo .navbar-small {
     display: none;
 } 
 
@@ -46,10 +46,6 @@ header .container .header-top nav {
 }
 
 header .container .header-top  {
-    overflow: hidden;
-}
-
-header .container .header-top .playlist {
     overflow: hidden;
 }
 
@@ -497,7 +493,7 @@ footer .footer-right .volume-bar:hover i {
 /* /footer */
 
 /* RESPONSIVE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     main nav ul,
     main .music .card-container,
@@ -510,7 +506,7 @@ footer .footer-right .volume-bar:hover i {
     }
 } 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     main .music .card-container .card {
         width: calc(100% / 2 - (15px / 2 * 1));
@@ -526,9 +522,79 @@ footer .footer-right .volume-bar:hover i {
     }
 } 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
+
+    header {
+        width: 40px;
+    }
+
+    header .container {
+        padding: 5px 10px;
+    }
+
+    header .logo{
+        padding: 0;
+    }
+
+    header .container .header-top,
+    header .container .header-top .logo,
+    header .container .header-top .logo .navbar-small {
+        height: 100%;
+    }
+
+    header .container .header-top .logo .navbar-small {
+        display: block;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .container .header-top .logo .navbar-small div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header .container .header-top .logo .navbar-small div:nth-child(2){
+        gap: 20px;
+    }
+
+    header .container .header-top .logo #logo-desktop,
+    header .container .header-top nav,
+    header .container .header-top .playlist,
+    header .container .header-bottom{
+        display: none;
+    }
+
+    header .container .header-top .logo .navbar-small img.navbar-small-img {
+    width: 1.8em;
+    filter: invert(50%);
+    } 
+    
+    header .container .header-top .logo .navbar-small img#user-pic {
+    width: 2em;
+    height: 2em; 
+    border-radius: 50%;
+
+    filter: invert(0%);
+    background-color: #808080;
+    }
+
+    main,
+    main section.container-upgrade {
+        width: calc(100% - 40px); /* viewport size - header size */
+    }
 
     footer .footer-right .options-icons {
         gap: 2px;
     }
 } 
+
+
+
+
+
+
+
