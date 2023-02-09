@@ -49,7 +49,6 @@ header .container .header-top .logo #logo-mobile {
 }
 
 header .container .header-top nav {
-    
     padding-bottom: 20px;
 }
 
@@ -70,6 +69,10 @@ header .container .header-top .playlist ul li .playlist-create i{
     color: #a3a3a3;
 }
 
+header .container .header-top nav ul li .nav-row {
+    position: relative;
+}
+
 header .container .header-top nav ul li .nav-row a,
 header .container .header-top .playlist ul li .playlist-create a,
 header .container .header-bottom .bottom a {
@@ -78,14 +81,9 @@ header .container .header-bottom .bottom a {
     gap: 5px;
 }
 
-header .container .header-top nav ul li .nav-row {
-    position: relative;
-    display: flex;
-}
-
 header .container .header-top nav ul li .nav-row a img,
 header .container .header-bottom .bottom a img {
-    width: 1.4em;
+    width: 1.4em; 
     filter: invert(50%);
 } 
 
@@ -96,8 +94,8 @@ header .container .header-bottom .download {
 }
 
 header .container .header-bottom .user a img {
-    width: 2em;
-    height: 2em;
+    width: 1.8em;
+    height: 1.8em;
     border-radius: 50%;
 
     filter: invert(0%);
@@ -540,11 +538,19 @@ footer .footer-right .volume-bar:hover i {
     header .container .header-top,
     header .container .header-bottom {
         padding: 0;
-}  
+    }  
 
-    header .container .header-top .logo,
-    header img {
+    header .container .header-top .logo {
         width: 100%;
+    }
+
+    header .container .header-top nav ul li .nav-row a img,
+    header .container .header-bottom .bottom a img {
+        width: 100%;
+    }
+
+    header .container .header-bottom .user a img {
+        height: 20px;
     }
 
     header .container .header-top .logo #logo-desktop,
@@ -562,10 +568,6 @@ footer .footer-right .volume-bar:hover i {
     header .container .header-top .logo #logo-mobile {
         display: block;
     }
-
-    
-
-
 
     main,
     main section.container-upgrade {
